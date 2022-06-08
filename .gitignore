@@ -1,0 +1,4 @@
+/target
+{% if is_lib %}
+/Cargo.lock
+{% endif %}
