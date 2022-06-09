@@ -1,7 +1,11 @@
+[github_user]
+type = "string"
+description = "GitHub User"
+
 [[ignore]]
 condition = "{{ crate_lib }}"
-paths = "src/main.rs"
+paths = ["src/main.rs"]
 
 [[ignore]]
 condition = "{{ crate_bin }}"
-paths = "src/lib.rs"
+paths = ["src/lib.rs"]
