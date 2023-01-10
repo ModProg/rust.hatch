@@ -1,4 +1,4 @@
 /target
-{% if is_lib %}
+{%- if crate_lib %}
 /Cargo.lock
-{% endif %}
+{%- endif %}
