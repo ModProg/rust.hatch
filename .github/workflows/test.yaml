@@ -1,3 +1,4 @@
+{% raw -%}
 name: Test
 
 on:
@@ -47,3 +48,4 @@ jobs:
       - name: Build Docs
         run:
           cargo doc ${{ matrix.features }} --workspace --no-deps
+{%- endraw %}

@@ -1,3 +1,4 @@
+{% raw -%}
 name: Git Docs
 
 on:
@@ -40,3 +41,4 @@ jobs:
           path: 'target/docs'
       - id: deployment
         uses: actions/deploy-pages@v1
+{%- endraw %}
