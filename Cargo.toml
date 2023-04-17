@@ -19,7 +19,7 @@ documentation = "https://docs.rs/{{ project_name }}"
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
-
+{% raw %}
 [[package.metadata.release.pre-release-replacements]]
 file = "CHANGELOG.md"
 search = '## \[Unreleased\]'
@@ -34,3 +34,4 @@ replace = """
 [unreleased]: $1/{{tag_name}}...HEAD
 [{{version}}]: $1/$2...{{tag_name}}\
 """
+{%- endraw %}
