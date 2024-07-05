@@ -8,4 +8,4 @@ paths = ["src/main.rs"]
 
 [[ignore]]
 condition = "{{ crate_bin }}"
-paths = ["src/lib.rs"]
+paths = ["src/lib.rs", ".github/workflows/docs.yml"]
